@@ -149,7 +149,7 @@ app.post("/articles/:id", function(req, res) {
     }
   });
 });
-var port = 3000 || process.env.PORT;
+var port = process.env.PORT || 3000;
 
 // Listen on port 3000
 app.listen(port, function() {
